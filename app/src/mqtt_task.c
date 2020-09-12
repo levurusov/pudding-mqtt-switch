@@ -190,10 +190,10 @@ void MqttInit(void) {
 #if 1  // TLS
     ci.use_ssl = true;
     ci.ssl_verify_mode = MQTT_SSL_VERIFY_MODE_OPTIONAL;
-    ci.ca_cert = ca_crt;
+    ci.ca_cert = CA_CRT;
     ci.ca_crl = NULL;
-    ci.client_cert = client_crt;
-    ci.client_key  = client_key;
+    ci.client_cert = CLIENT_CRT;
+    ci.client_key  = CLIENT_KEY;
     ci.client_key_passwd = NULL;
     ci.broker_hostname = BROKER_HOSTNAME;
     ci.ssl_min_version = MQTT_SSL_VERSION_TLSv1_1;
